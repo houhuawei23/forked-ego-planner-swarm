@@ -34,6 +34,7 @@
 #include <OGRE/OgreSceneManager.h>
 #include <OGRE/OgreSceneNode.h>
 #include <OGRE/OgreTextureManager.h>
+#include <OGRE/OgreTechnique.h>
 
 #include <ros/ros.h>
 

@@ -33,6 +33,8 @@
 //! @todo historical above
 #include "maps.hpp"
 
+#include <deque>
+
 using namespace std;
 using namespace mocka;
 
@@ -53,7 +55,7 @@ ros::Publisher _global_map_pub;
 ros::Subscriber _map_sub;
 ros::Subscriber _odom_sub;
 
-deque<nav_msgs::Odometry> _odom_queue;
+std::deque<nav_msgs::Odometry> _odom_queue;
 vector<double>            _state;
 const size_t              _odom_queue_size = 200;
 nav_msgs::Odometry        _odom;
